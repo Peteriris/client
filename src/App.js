@@ -4,24 +4,25 @@ import Topbar from"./page/Topbar";
 import Bootumbar from"./page/Bootumbar";
 import Login from "./components/Login"
 import Signup from "./components/Signup"
+import Welcome from "./components/Welcome"
 
-//import Welcome from"../components/Welcome";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+//import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Topbar/>
-      <Router>
+      {/* <Router>
           <Routes>
-            <Route path="/" components={Login}>
+            <Route path="/">
               <Login/>
             </Route>
-            <Route path="/signup" components={Signup}>
+            <Route path="/signup">
               <Signup/>
             </Route>
           </Routes>
-        </Router>
+        </Router> */}
+        <Welcome/>
       <Bootumbar/>
     </div>
   );
